@@ -1,0 +1,149 @@
+html {
+    font-family: verdana;
+}
+
+/* Don't let images take more than the page width */
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 5px #7d97ad;
+}
+
+body {
+    padding: 10px;
+}
+
+.owner-info {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.owner-name {
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: normal;
+    vertical-align: text-bottom;
+}
+
+.owner-title {
+    font-size: 8px;
+    margin-top: 0;
+    font-weight: normal;
+    vertical-align: text-top;
+}
+
+.main-image {
+    padding-top: 20px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.work-item {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.work-image {
+    height: 150px;
+}
+
+.work-title {
+    width: 100%;
+    color: #7d97ad;
+}
+
+.work-name {
+    color:#2d3c49;
+    margin-bottom: 0;
+}
+
+.work-link {
+    font-size: 8px;
+}
+
+/* Adjust featured work image size accordingly to browser width*/
+@media screen and (max-width: 383px) {
+
+    .logo {
+        width: 50%;
+    }
+
+    .owner-info {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 460px) {
+
+    .work-image {
+        height: 250px;
+    }
+
+    .owner-name {
+        font-size: 18px;
+    }
+
+    .owner-title {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1199px) {
+
+    .owner-name {
+        font-size: 30px;
+    }
+
+    .owner-title {
+        font-size: 16px;
+    }
+
+    .work-item {
+        width: 50%;
+    }
+
+    /*Center the wrapped project*/
+    .work-item:last-of-type {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .owner-name {
+        font-size: 30px;
+    }
+
+    .owner-title {
+        font-size: 16px;
+    }
+
+    .work-item {
+        width: 33%;
+    }
+}
